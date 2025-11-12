@@ -1,14 +1,15 @@
-# A program that calculates the distance to the horizon
+# A program that calculates and prints:
+# - the number of people and percentage of the total
+#   population living in the Northern Hemisphere
+# - the number of people and percentage of the total
+#   population living in the Southern Hemisphere
 #
-# d = 3.57 × √h
-#I.
-import math
-h = 1.8
-d = 3.57 * math.sqrt(h)
-print("distance in kilometers from the beach to the horizon for the height:", h, "meters", "is equal to:", d, "kilometers") 
 
-#II.
-h2 = 20
-d2 = 3.57 * math.sqrt(h2)
-print("distance in kilometers to the horizon from the window that is:", h2, "meters above the sea", "is equal to:", d2, "kilometers") 
-
+total = 8000000000
+north = 7200000000
+south = total - north
+print("World population: ", total)
+print("Northern Hemisphere: ", north)
+print("Northern Hemisphere in %: ", north/total*100)
+print("Southern Hemisphere: ", south)
+print("Southern Hemisphere in %: ", south/total*100)
