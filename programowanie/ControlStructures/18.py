@@ -1,9 +1,11 @@
 ###
-# Checking whether a car exceeded the speed limit
+# Calculates the sum of even numbers in the range <1,10>
 #
-speed_limit = 140
-car_speed = int( input('Enter car speed (km/h): ') )
+sum = 0
 
-if car_speed > speed_limit:
-    print(f'Your speed is {car_speed}km/h')
-    print('Warning: speed limit exceeded!!')
+for i in range(1, 10):
+    if not i % 2 == 0:
+        continue
+    sum += i
+
+print(f'Sum of even numbers in the range <1,10> is {sum}')

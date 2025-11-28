@@ -1,9 +1,5 @@
 ###
-# Checking whether a car exceeded the speed limit
+# Calculates values for the following fractions: 1/2, 1/3, ..., 1/10
 #
-speed_limit = 140
-car_speed = int( input('Enter car speed (km/h): ') )
-
-if car_speed > speed_limit:
-    print(f'Your speed is {car_speed}km/h')
-    print('Warning: speed limit exceeded!!')
+for i in range(1, 11):
+    print(f'1/{i} = {1 / i}')

@@ -1,9 +1,33 @@
 ###
-# Checking whether a car exceeded the speed limit
+# Encrypts text using Caesar Code, shifting each letter
+# in the alphabet right one position
 #
-speed_limit = 140
-car_speed = int( input('Enter car speed (km/h): ') )
+plain_text = 'The early bird catches the worm'
+encrypted_text = ''
 
-if car_speed > speed_limit:
-    print(f'Your speed is {car_speed}km/h')
-    print('Warning: speed limit exceeded!!')
+for char in plain_text:
+    # read the character's code (use ord())
+    if char.isalpha():
+        original_code = ord(char)
+
+        # add one to the character's code 
+        if char == 'Z':
+            new_code = ord('A')
+        elif char == 'z':
+            new_code = ord('a')
+        else:
+            new_code = original_code + 1
+
+        # replace new character code with its
+        # corresponding character (use chr())
+        new_char = chr(new_code)
+
+        # add encrypted character to encrypted text
+        encrypted_text += new_char
+
+    else:
+        # keep non-letters unchanged
+        encrypted_text += char
+
+print(plain_text)
+print(encrypted_text)

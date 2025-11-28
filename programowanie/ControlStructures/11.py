@@ -1,9 +1,13 @@
 ###
-# Checking whether a car exceeded the speed limit
+# Checking login and password
 #
-speed_limit = 140
-car_speed = int( input('Enter car speed (km/h): ') )
-
-if car_speed > speed_limit:
-    print(f'Your speed is {car_speed}km/h')
-    print('Warning: speed limit exceeded!!')
+login = 'Stasiu'
+password = 'abcd'
+entered_login = input('Login: ')
+entered_password = input('Password: ')
+if login == entered_login and password == entered_password :
+    print('You are logged in')
+elif login == entered_login or password == entered_password:
+     print('Incorrect login or password!!')
+else :
+     print('Both password and login are incorrect')

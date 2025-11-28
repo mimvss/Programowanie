@@ -1,9 +1,11 @@
 ###
-# Checking whether a car exceeded the speed limit
-#
-speed_limit = 140
-car_speed = int( input('Enter car speed (km/h): ') )
+# Checks whether at least one number entered
+# from the keyboard is not negative
+# 
+x = int(input('Enter first number: '))
+y = int(input('Enter second number: '))
 
-if car_speed > speed_limit:
-    print(f'Your speed is {car_speed}km/h')
-    print('Warning: speed limit exceeded!!')
+if not x < 0 or not y < 0:
+    print(f'At least one of the numbers {x} and {y} is not negative')
+else:
+    print('Both of your entered numbers are negative')

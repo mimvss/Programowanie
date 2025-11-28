@@ -1,9 +1,14 @@
 ###
-# Checking whether a car exceeded the speed limit
+# Calculates the number of days in a month
 #
-speed_limit = 140
-car_speed = int( input('Enter car speed (km/h): ') )
+month = int(input('Enter month number (1..12): '))
 
-if car_speed > speed_limit:
-    print(f'Your speed is {car_speed}km/h')
-    print('Warning: speed limit exceeded!!')
+if month==1 or month==3 or month==5 or month==7 or month==8 or month==10 or month==12 :
+    days = 31 ## months with 31 days
+elif month > 2 :
+    days = 30 ## months with 30 days
+else :
+    days = 28
+## February 28 days 
+
+print(f'Month {month} has {days} days')

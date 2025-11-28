@@ -1,9 +1,15 @@
 ###
-# Checking whether a car exceeded the speed limit
+# Prints the name of university where you are studying
+# with an extra space between characters (add a space between
+# each character), e.g.
+# 'book' -> 'b o o k'
 #
-speed_limit = 140
-car_speed = int( input('Enter car speed (km/h): ') )
+university = 'Krakow University of Economics'
+university_expanded = ''
 
-if car_speed > speed_limit:
-    print(f'Your speed is {car_speed}km/h')
-    print('Warning: speed limit exceeded!!')
+for char in university:
+    university_expanded += char + ' ' 
+    
+    
+print(university) # original university name
+print(university_expanded) # expanded university name

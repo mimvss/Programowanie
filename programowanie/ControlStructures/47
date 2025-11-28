@@ -1,0 +1,7 @@
+# Read number from user
+number = int(input("Enter number: "))
+
+# Print multiplication table from 1 to 10
+for i in range(1, 11):
+    result = number * i
+    print(f"{number} x {i} = {result}")

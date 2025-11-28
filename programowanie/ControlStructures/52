@@ -1,0 +1,13 @@
+# Number of Fibonacci terms
+n = 20
+
+# First two terms
+a, b = 0, 1
+
+# Print the first term
+print(a, end=' ')
+
+# Print remaining n-1 terms
+for _ in range(n - 1):
+    print(b, end=' ')
+    a, b = b, a + b  # przesuwamy wyrazy: nowy a = stary b, nowy b = a + b
